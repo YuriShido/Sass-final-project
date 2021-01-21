@@ -1,0 +1,14 @@
+{
+  "name": "sass-final-project",
+  "version": "1.0.0",
+  "description": "sass project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass SASS/main.scss css/style.css -w"
+  },
+  "author": "YuriS",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

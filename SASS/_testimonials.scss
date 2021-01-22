@@ -10,13 +10,14 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 2.5rem;
+
   &--c {
     width: 370px;
-    height: 340px;
+    height: 320px;
     margin-bottom: 10px;
     background: #efefef;
     position: relative;
-
+    
    
   }
   
@@ -26,6 +27,7 @@
     font-style:italic;
     background: #efefef;
     color: #555;
+    height: 320px;
     
     &:before {
       display: inline-block;

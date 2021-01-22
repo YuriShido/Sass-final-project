@@ -275,7 +275,7 @@ header {
     margin-bottom: 2.5rem; }
     #testimonials .testimonials-container--c {
       width: 370px;
-      height: 340px;
+      height: 320px;
       margin-bottom: 10px;
       background: #efefef;
       position: relative; }
@@ -284,7 +284,8 @@ header {
       padding: 30px 20px 8px 20px;
       font-style: italic;
       background: #efefef;
-      color: #555; }
+      color: #555;
+      height: 320px; }
       #testimonials .testimonials-container blockquote:before {
         display: inline-block;
         position: absolute;

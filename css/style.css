@@ -121,7 +121,8 @@ header {
     header .nav-bar li a {
       display: block;
       padding: 20px 20px;
-      color: black; }
+      color: black;
+      font-size: 15px; }
     header .nav-bar li a:hover,
     header .nav-bar .menu-btn:hover {
       color: white;
@@ -134,7 +135,7 @@ header {
       text-decoration: none;
       color: rgba(0, 0, 0, 0.9); }
     header .nav-bar .top-logo {
-      height: 70px; }
+      height: 68px; }
     header .nav-bar .menu {
       clear: both;
       max-height: 0;
@@ -182,7 +183,8 @@ header {
     header .nav-bar li {
       float: left; }
     header .nav-bar li a {
-      padding: 20px 20px; }
+      padding: 20px 18px;
+      font-size: 16px; }
       header .nav-bar li a:hover,
       header .nav-bar li a .menu-btn:hover {
         color: #76b109;

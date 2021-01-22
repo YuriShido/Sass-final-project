@@ -3,13 +3,21 @@
   padding: 0;
   box-sizing: border-box; }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 body {
   font-family: 'Antic Slab', serif;
   font-family: 'Bitter', serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.1rem; }
+  letter-spacing: 0.08rem; }
 
 section {
   padding: 3rem; }
@@ -72,15 +80,14 @@ a {
   h4 {
     font-size: 0.9rem; }
   .menu-price-container p {
-    font-size: 14px; }
-  #footer.footer--container a {
-    font-size: 12px; } }
+    font-size: 14px; } }
 
 @media (max-width: 480px) {
   section {
     padding: 1.5rem; }
   h1 {
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    margin-top: 500px; }
   h2 {
     font-size: 1.5rem; }
   h3 {
@@ -117,7 +124,8 @@ header {
       color: black; }
     header .nav-bar li a:hover,
     header .nav-bar .menu-btn:hover {
-      color: silver; }
+      color: white;
+      background-color: #065e06; }
     header .nav-bar .logo {
       display: block;
       float: left;
@@ -133,7 +141,6 @@ header {
       transition: max-height .2s ease-out; }
     header .nav-bar .menu-icon {
       cursor: pointer;
-      display: inline-block;
       float: right;
       padding: 28px 20px;
       position: relative;
@@ -161,7 +168,7 @@ header {
     header .nav-bar .menu-btn {
       display: none; }
     header .nav-bar .menu-btn:checked ~ .menu {
-      max-height: 260px; }
+      max-height: 320px; }
     header .nav-bar .menu-btn:checked ~ .menu-icon .navicon {
       background: transparent; }
     header .nav-bar .menu-btn:checked ~ .menu-icon .navicon:before {
@@ -176,6 +183,10 @@ header {
       float: left; }
     header .nav-bar li a {
       padding: 20px 20px; }
+      header .nav-bar li a:hover,
+      header .nav-bar li a .menu-btn:hover {
+        color: #76b109;
+        background-color: white; }
     header .nav-bar .menu {
       clear: none;
       float: right;
@@ -190,11 +201,18 @@ header {
   .hero h1 {
     font-weight: normal;
     text-align: center;
-    margin-top: 300px; }
+    margin-top: 300px;
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards; }
   .hero p {
-    text-align: center; }
+    text-align: center;
+    animation: moveInBottom .5s ease-out 1.25s;
+    animation-fill-mode: backwards;
+    padding: 0 1.5rem; }
   .hero .btn {
-    margin: 1rem auto; }
+    margin: 1rem auto;
+    animation: moveInBottom .5s ease-out 1.75s;
+    animation-fill-mode: backwards; }
 
 .about {
   text-align: center; }
@@ -204,7 +222,7 @@ header {
 #service {
   color: black;
   color: white;
-  background-color: rgba(0, 0, 0, 0.75); }
+  background-color: #065e06; }
 
 .service-container {
   display: flex;
@@ -213,8 +231,9 @@ header {
   .service-container--c {
     width: 400px;
     height: auto;
-    margin-top: 1.5rem; }
+    margin: 1.5rem 0; }
     .service-container--c h3 {
+      font-size: 24px;
       padding-bottom: 0.2rem;
       text-align: center; }
     .service-container--c img {
@@ -225,7 +244,8 @@ header {
 #menu .menu-price-container {
   display: flex;
   flex-direction: column;
-  font-size: 18px; }
+  font-size: 18px;
+  padding: 3.5rem 3rem; }
   #menu .menu-price-container--c {
     display: grid;
     grid-template-columns: 1.5fr 0.7fr 0.7fr 3fr; }
@@ -235,9 +255,16 @@ header {
   @media (max-width: 760px) {
     #menu .menu-price-container {
       font-size: 14px; } }
+  @media (max-width: 480px) {
+    #menu .menu-price-container {
+      padding: 3.5rem 0; }
+      #menu .menu-price-container .menu-price-container--c {
+        grid-template-columns: 1.5fr 0.5fr 0.5fr 2.7fr; }
+        #menu .menu-price-container .menu-price-container--c p {
+          font-size: 14px; } }
 
 #testimonials {
-  background-color: rgba(0, 0, 0, 0.75); }
+  background-color: #065e06; }
   #testimonials h2 {
     color: white; }
   #testimonials .testimonials-container {
@@ -248,7 +275,7 @@ header {
     margin-bottom: 2.5rem; }
     #testimonials .testimonials-container--c {
       width: 370px;
-      height: 310px;
+      height: 340px;
       margin-bottom: 10px;
       background: #efefef;
       position: relative; }
@@ -267,7 +294,8 @@ header {
         font-family: "Font Awesome 5 Free";
         font-size: 28px;
         font-weight: 900;
-        line-height: 1; }
+        line-height: 1;
+        color: #555; }
       #testimonials .testimonials-container blockquote p {
         padding-top: 10px;
         margin: 10px 0;
@@ -326,7 +354,9 @@ header {
       width: 120px;
       margin-left: 15px;
       margin-top: 1rem;
-      border: none; }
+      border: none;
+      font-family: 'Antic Slab', serif;
+      font-family: 'Bitter', serif; }
   .contact--container--right {
     min-width: 320px;
     max-width: 600px;
@@ -371,6 +401,8 @@ header {
       text-decoration: none;
       color: white;
       padding: 0 10px; }
+      #footer .footer--container a:hover {
+        color: silver; }
       #footer .footer--container a .fab {
         color: white;
         font-size: 1.5rem; }
@@ -382,8 +414,13 @@ header {
 
 @media (max-width: 760px) {
   #footer p {
-    font-size: 10px; }
+    font-size: 12px; }
   #footer .footer--container a {
-    font-size: 10px; }
+    font-size: 12px; }
     #footer .footer--container a .fab {
       font-size: 1rem; } }
+
+@media (max-width: 480px) {
+  #footer .footer--container .footer--menu {
+    display: flex;
+    flex-direction: column; } }

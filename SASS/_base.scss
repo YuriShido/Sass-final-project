@@ -4,8 +4,21 @@
   box-sizing: border-box;
 }
 
-$color-primary:rgb(165, 252, 3);
-$color-back:rgba(0, 0, 0, 0.75);
+$color-primary:rgb(118, 177, 9);
+$color-dark:rgba(0, 0, 0, 0.75);
+$color-middium:rgb(6, 94, 6);
+
+@keyframes moveInBottom {
+  0%{
+      opacity: 0;
+      transform: translateY(30px);
+  }
+
+  100%{
+      opacity: 1; 
+      transform: translate(0);
+  }
+}
 
 body {
   // font-family: 'Ubuntu','Lato', sans-serif;
@@ -14,7 +27,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.08rem;
   // color: $color-grey;
   // padding: 30px;
 }
@@ -24,6 +37,7 @@ section {
 h1 {
   font-size: 3rem;
   font-weight: normal;
+  
 }
 h2 {
   font-size: 2rem;
@@ -110,10 +124,7 @@ a {
   }
 
 
-  //footer
-  #footer.footer--container a {
-    font-size: 12px;
-  }
+  
 }
 
 @media (max-width: 480px) {
@@ -122,6 +133,7 @@ a {
   }
   h1 {
     font-size: 1.8rem;
+    margin-top: 500px;
   }
 
   h2 {

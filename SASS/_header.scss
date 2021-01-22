@@ -40,7 +40,8 @@ header {
     }
     li a:hover ,
     .menu-btn:hover{
-      color:silver;
+      color:white;
+      background-color: $color-middium;
     }
 
     .logo {
@@ -66,7 +67,7 @@ header {
     //menu icon
     .menu-icon {
       cursor: pointer;
-      display: inline-block;
+      // display: inline-block;
       float: right;
       padding:28px 20px;
       position:relative;
@@ -106,7 +107,7 @@ header {
     }
     
     .menu-btn:checked ~ .menu {
-      max-height: 260px; //or 400px?
+      max-height: 320px; 
     }
     
     .menu-btn:checked ~ .menu-icon .navicon {
@@ -135,13 +136,21 @@ header {
   
     .nav-bar li a {
       padding: 20px 20px;
+
+      &:hover ,
+      .menu-btn:hover{
+        color: $color-primary;
+        background-color: white;
+      }
+      
     }
-  
+    
     .nav-bar .menu {
       clear:none;
       float: right;
       max-height: none;
     }
+
   
     .nav-bar .menu-icon {
       display: none;
@@ -162,13 +171,20 @@ header {
     font-weight: normal;
     text-align: center;
     margin-top: 300px;
-
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
   }
+
   p {
     text-align: center;
+    animation: moveInBottom .5s ease-out 1.25s;
+    animation-fill-mode: backwards;
+    padding: 0 1.5rem;
   }
 
   .btn {
     margin: 1rem auto;
+    animation: moveInBottom .5s ease-out 1.75s;
+    animation-fill-mode: backwards;
   }
 }

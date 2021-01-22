@@ -4,8 +4,8 @@
   color: black;
   color: white;
   // background-color: rgba(202, 172, 126, 0.575);
-  background-color:$color-back;
-  
+  background-color: $color-middium;
+ 
 }
 .service-container {
   display: flex;
@@ -16,9 +16,11 @@
   &--c {
     width: 400px;
     height: auto;
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
+
 
     h3 {
+      font-size:24px;
       padding-bottom: 0.2rem;
       text-align: center;
     }

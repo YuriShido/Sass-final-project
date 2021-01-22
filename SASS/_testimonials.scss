@@ -1,6 +1,6 @@
 //testimoniais
 #testimonials {
-  background-color: $color-back;
+  background-color:$color-middium;
   h2 {
     color: white;
   }
@@ -12,10 +12,12 @@
     margin-bottom: 2.5rem;
   &--c {
     width: 370px;
-    height: 310px;
+    height: 340px;
     margin-bottom: 10px;
     background: #efefef;
     position: relative;
+
+   
   }
   
   blockquote {
@@ -35,7 +37,7 @@
       font-size: 28px;
       font-weight: 900;
       line-height: 1;
-      
+      color: #555;
     }
     
     p {

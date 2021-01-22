@@ -4,10 +4,12 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Ubuntu','Lato', sans-serif;
+  font-family: 'Antic Slab', serif;
+  font-family: 'Bitter', serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  letter-spacing: 0.1rem; }
 
 section {
   padding: 3rem; }
@@ -59,8 +61,36 @@ a {
   .btn:active {
     transform: translateY(4px); }
 
+@media (max-width: 760px) {
+  h1 {
+    font-size: 2.5rem; }
+  h2 {
+    font-size: 1.75rem;
+    padding: 2rem 0; }
+  h3 {
+    font-size: 1.5rem; }
+  h4 {
+    font-size: 0.9rem; }
+  .menu-price-container p {
+    font-size: 14px; }
+  #footer.footer--container a {
+    font-size: 12px; } }
+
+@media (max-width: 480px) {
+  section {
+    padding: 1.5rem; }
+  h1 {
+    font-size: 1.8rem; }
+  h2 {
+    font-size: 1.5rem; }
+  h3 {
+    font-size: 1.3rem; }
+  h4 {
+    font-size: 1rem; }
+  p {
+    font-size: 16px; } }
+
 header {
-  font-family: 'Ubuntu', sans-serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/wellness-589770_1920.jpg);
   background-size: cover;
   background-position: top;
@@ -198,7 +228,7 @@ header {
   font-size: 18px; }
   #menu .menu-price-container--c {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 0.7fr 3fr; }
+    grid-template-columns: 1.5fr 0.7fr 0.7fr 3fr; }
     #menu .menu-price-container--c p {
       padding: 1rem 10px;
       border-bottom: 1px solid silver; }
@@ -206,40 +236,47 @@ header {
     #menu .menu-price-container {
       font-size: 14px; } }
 
-.testimonials-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
-  .testimonials-container--c {
-    width: 370px;
-    height: auto;
-    margin-bottom: 10px; }
-  .testimonials-container blockquote {
-    position: relative;
-    padding: 30px 20px 8px 20px;
-    font-style: italic;
-    background: #efefef;
-    color: #555; }
-    .testimonials-container blockquote:before {
-      display: inline-block;
-      position: absolute;
-      top: 13px;
-      left: 15px;
-      content: "\f10d";
-      font-family: "Font Awesome 5 Free";
-      font-size: 28px;
-      font-weight: 900;
-      line-height: 1; }
-    .testimonials-container blockquote p {
-      padding-top: 10px;
-      margin: 10px 0;
-      line-height: 1.5; }
-    .testimonials-container blockquote .name {
-      position: absolute;
-      bottom: 5px;
-      right: 25px;
-      font-size: 18px; }
+#testimonials {
+  background-color: rgba(0, 0, 0, 0.75); }
+  #testimonials h2 {
+    color: white; }
+  #testimonials .testimonials-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2.5rem; }
+    #testimonials .testimonials-container--c {
+      width: 370px;
+      height: 310px;
+      margin-bottom: 10px;
+      background: #efefef;
+      position: relative; }
+    #testimonials .testimonials-container blockquote {
+      position: relative;
+      padding: 30px 20px 8px 20px;
+      font-style: italic;
+      background: #efefef;
+      color: #555; }
+      #testimonials .testimonials-container blockquote:before {
+        display: inline-block;
+        position: absolute;
+        top: 13px;
+        left: 15px;
+        content: "\f10d";
+        font-family: "Font Awesome 5 Free";
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 1; }
+      #testimonials .testimonials-container blockquote p {
+        padding-top: 10px;
+        margin: 10px 0;
+        line-height: 1.5; }
+      #testimonials .testimonials-container blockquote .name {
+        position: absolute;
+        bottom: 5px;
+        right: 25px;
+        font-size: 18px; }
 
 .contact h3, .contact p {
   text-align: center; }
@@ -296,16 +333,26 @@ header {
     height: auto; }
     .contact--container--right .info--c {
       display: flex;
-      margin-top: 10px; }
+      flex-direction: column;
+      margin-top: 10px;
+      align-items: start; }
+      .contact--container--right .info--c .info-title {
+        display: flex; }
+        .contact--container--right .info--c .info-title i {
+          font-size: 18px;
+          padding: 2px 5px 0px 0px; }
       .contact--container--right .info--c p {
-        padding-left: 15px; }
-      .contact--container--right .info--c i {
-        font-size: 18px;
-        padding: 2px 5px 0px 0px; }
+        padding: 0 0 5px 15px; }
   .contact--container .map {
     width: 100%;
     height: 270px;
-    margin: 1rem 0.5rem 0.5rem 0.3rem; }
+    margin: 1rem 0.3rem 0.3rem 0.3rem; }
+
+@media (min-width: 760px) {
+  .contact--container--left {
+    width: 450px; }
+  .contact--container--right {
+    width: 450px; } }
 
 #footer {
   background-color: rgba(0, 0, 0, 0.75);
@@ -334,5 +381,9 @@ header {
     padding-bottom: 15px; }
 
 @media (max-width: 760px) {
-  .menu-price-container p {
-    font-size: 14px; } }
+  #footer p {
+    font-size: 10px; }
+  #footer .footer--container a {
+    font-size: 10px; }
+    #footer .footer--container a .fab {
+      font-size: 1rem; } }

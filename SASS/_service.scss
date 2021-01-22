@@ -1,0 +1,35 @@
+
+
+#service {
+  color: black;
+  color: white;
+  // background-color: rgba(202, 172, 126, 0.575);
+  background-color:$color-back;
+  
+}
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+
+  &--c {
+    width: 400px;
+    height: auto;
+    margin-top: 1.5rem;
+
+    h3 {
+      padding-bottom: 0.2rem;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      // border-radius: 5px;
+    }
+    p {
+      font-size:16px;
+    }
+  }
+
+  
+}

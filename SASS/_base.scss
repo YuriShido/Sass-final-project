@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$color-primary:rgb(165, 252, 3);
+$color-back:rgba(0, 0, 0, 0.75);
+
+body {
+  // font-family: 'Ubuntu','Lato', sans-serif;
+  font-family: 'Antic Slab', serif;
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  // color: $color-grey;
+  // padding: 30px;
+}
+section {
+  padding: 3rem;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem 0;
+  // font-weight: 550;
+}
+h3 {
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+h4 {
+  font-size: 1rem;
+  // font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn
+ {
+  font-size: 1rem;
+  // font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.2s;
+  text-align: center;
+  // vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  // color: white;
+  background-color: rgb(117, 177, 6);
+  border-radius: 0.25rem;
+  
+  &:hover {
+    // color: ;
+    // background-color:rgb(252, 236, 13);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    color: rgb(231, 230, 230);
+    background-color: rgb(6, 105, 6) ;
+  }
+
+  &:active {
+    // transform: scale(1.1);
+    transform: translateY(4px);
+   
+  }
+
+
+  
+}
+
+@media (max-width: 760px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+    padding: 2rem 0;
+    // font-weight: 550;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+    // font-weight: normal;
+  }
+  //menu
+  .menu-price-container p {
+    font-size: 14px;
+  }
+
+
+  //footer
+  #footer.footer--container a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size:1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1rem;
+    // font-weight: normal;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
